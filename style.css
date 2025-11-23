@@ -1,4 +1,4 @@
-*{
+r*{
     font-family: sans-serif;
     margin: 0;
     padding: 0;
@@ -91,12 +91,17 @@ h2{
 }
 #gender-div{
     display:flex;
-    width:100px;
-    justify-content:space-around;
+    justify-content:center;
 }
 #male{
     padding-right:20px;
 }
+#gender-div2{
+    display:flex;
+    width:100px;
+    justify-content:space-around;
+}
+    
 
 
 
