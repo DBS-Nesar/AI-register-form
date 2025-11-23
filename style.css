@@ -75,11 +75,14 @@ h2{
 }
 #submit-button:active{
     background-color: grey;
-    transition-duration: 2ms;
+}
+#submit-button:hover{
+    transform:scale(1.25);
 }
 .gender{
     color:white;
     display: inline-block;
 }
+
 
 
