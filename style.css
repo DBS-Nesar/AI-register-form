@@ -110,10 +110,9 @@ body{
     width:100px;
     justify-content:space-around;
 }
-#logo:active{
-    transform: translateX(600px);
-}
+
     
+
 
 
 
