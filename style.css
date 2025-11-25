@@ -146,7 +146,7 @@ footer {
 
 /* ⭐ Text container (your original ID: #f-d) */
 #f-d {
-    text-align: right;
+    text-align: left;
     display: flex;
     flex-direction: column;  /* makes multiline */
 }
@@ -164,6 +164,7 @@ footer {
     width: 150px;
     border-radius: 50%;
 }
+
 
 
 
