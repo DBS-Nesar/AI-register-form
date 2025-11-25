@@ -116,7 +116,7 @@ body{
 }
 #credit{
     height:200px;
-    width:200px;
+    width:200px;/*balebale*/
     border-radius:50%;
 }
 #footer {
@@ -155,6 +155,7 @@ footer {
     width: 150px;
     border-radius: 50%;
 }
+
 
 
 
