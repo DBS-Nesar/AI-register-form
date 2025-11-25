@@ -42,7 +42,7 @@ body{
     margin-bottom: 10px;
 }
 #logo:hover{
-    transition:all 0.4s ease-in;
+    transition:all 0.25s ease-in;
     transform: scale(1.10);
 }
 #form-container{
@@ -80,14 +80,14 @@ body{
 .links:hover{
     color:orange;
     font-weight: bolder;
-    transition-duration: 0.75s;
+    transition-duration: 0.7s;
 }
 #submit-button:active{
     background-color: grey;
 }
 #submit-button:hover{
     transform:scale(1.05,1);
-    transition:all 1s ease-in;
+    transition:all 0.5s ease-in;
 }
 .gender{
     color:white;
@@ -121,6 +121,7 @@ body{
 }
 
     
+
 
 
 
