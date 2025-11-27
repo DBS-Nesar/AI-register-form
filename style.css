@@ -30,8 +30,8 @@ body{
     justify-content: space-evenly;
     margin-right: 0px;
     align-items: end;
-        text-align: right;
-    margin-left: 800px;
+    text-align: right;
+    margin-left: 370px;
     width: 500px;
     font-weight: 400;
 }
@@ -159,5 +159,6 @@ footer {
 }
 #main-head{
     width:150px;
-    margin-left:400px
+    margin-left:400px;
 }
+
