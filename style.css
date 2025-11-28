@@ -2,9 +2,13 @@
     margin: 0;
     padding: 0;
 }
-@keyframes headings{
+@keyframes head{
     from{transform: translateX(0px);}
     to{transform:translateX(335px);}
+}
+@keyframes headings{
+    from{transform: translateX(0px);}
+    to{transform:translateX(100px);}
 }
 body{
     background-image:url("galaxy-wallpaper-warm-colors.jpg");
@@ -21,6 +25,7 @@ body{
 .headings{
         color:whitesmoke;
         font-family: 'Trebuchet MS';
+        margin-right:600px;
 }
 #navbar{
     display:flex;
@@ -164,9 +169,10 @@ footer {
     width:150px;
     margin-left:100px;
     margin-top:30px;
-    animation: headings 0.8s ease-in;
+    animation: head 0.8s ease-in;
     animation-fill-mode: forwards;
 }
+
 
 
 
