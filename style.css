@@ -12,7 +12,10 @@
     to{transform:translateX(150px);}
     }
     #right-sided-navbar{
-        margin-left:140px;
+        margin-left:200px;
+    }
+    #main-head{
+        width: 502px;
     }
 }
 @keyframes headings{
@@ -23,9 +26,11 @@
     border-radius:50%;
 }
 body{
-    background-image:url("galaxy-wallpaper-warm-colors.jpg");
+    background-image:url("bg(2).jpg");
     background-size: cover;
+    background-repeat:no-repeat;
     text-align: center;
+    scrollbar-width: none;
 }
 #main-head{
     margin-left:100px;
@@ -48,6 +53,9 @@ body{
     color:whitesmoke;
     font-family: arial;
 }
+#f-main-head{
+    margin:20px;
+}
 .headings{
         margin-right: 600px;
         background: -webkit-linear-gradient(whitesmoke,orange);
@@ -58,15 +66,17 @@ body{
         animation-duration: 0.8s;
         animation-fill-mode: forwards;
         animation-timing-function: ease-in;
+        width: 400px;
 }
 #navbar{
+    backdrop-filter: blur(11px);
     display:flex;
     text-align: right;
     background-color: rgba(0, 0, 0, 0.452);
     right:0px;
     position: relative;
-    z-index: 10
-    background-image:linear-gradient(black,orange,orange,orange,orange,orange,black);
+    z-index: 10;
+    /* background-image:linear-gradient(black,orange,orange,orange,orange,orange,black); */
 }
 #navbar::after {
     content: "";
@@ -102,30 +112,56 @@ body{
     transform: scale(1.10);
 }
 #form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     margin-top: 150px;
-    background-color: rgba(0, 0, 0, 0.65);
+    background-color: rgba(0, 0, 0, 0.24);
     text-align: center;
     height: auto;
-    width: 930px;
+    width: 650px;
     border-radius: 15px;
     backdrop-filter: blur(15px);
 }
+
+#form{
+    display: flex;
+    justify-content: center;
+}
 #submit-button{
-    background-color:black;
+    background-image:linear-gradient(to left top,rgba(16, 54, 117,0.8),rgba(51, 110, 173,0.8),rgb(77, 178, 248,0.8),rgba(112, 208, 248,0.8));
     font-family: sans-serif;
-    font-weight: 700;
+    font-weight: 600;
     width:400px;
-    color:whitesmoke;
     margin-top:30px;
     margin-bottom:50px;
+    border-radius: 15px;
+    color: rgba(255, 255, 255, 0.6);
 }
 .inputs{
-    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0);
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1.7px solid rgba(255, 255, 255, 0.6);
     margin-top: 10px;
-    height: 30px;
-    width:300px;
+    height: 37px;
+    width:380px;
     font-family: arial;
     padding-left:10px;
+    color: rgba(255, 255, 255, 0.6);
+}
+.inputs:focus{
+    outline:none;
+    border-bottom: 2px solid orange;
+    transition: border-bottom 0.4s ease-in;
+}
+.inputs::placeholder{
+    color: rgba(255, 255, 255, 0.6);
+}
+
+select option{
+    color:black;
 }
 .links:hover{
     background: -webkit-linear-gradient(135deg,whitesmoke,orange 70%);
@@ -143,6 +179,7 @@ body{
 #submit-button:hover{
     transform:scale(1.05,1);
     transition:all 0.5s ease-in;
+    font-weight: 800;
 }
 .gender{
     color:white;
@@ -169,7 +206,7 @@ body{
     flex-direction: column;   
     align-items: flex-start; 
     gap: 10px;     
-    margin-left:350px;
+    margin-left:250px;
 }
 #male{
     padding-right:20px;
@@ -180,9 +217,9 @@ body{
     justify-content:space-around;
 }
 .footer:hover{
-    border:0.01px dashed orange;
+    border:0.01px dashed rgb(112, 208, 248);
     border-radius:7px;
-    background: -webkit-linear-gradient(orange ,whitesmoke);
+    background: -webkit-linear-gradient(rgb(112, 208, 248) ,whitesmoke);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -203,16 +240,18 @@ body{
     height:200px;
     width:200px;/*balebale*/
     border-radius:50%;
+    padding: 17px,0,0,0;
 }
 #credit:hover{
     transform:scale(1.10);
+    transition-duration:0.4s ;
 }
 #footer {
     background-color: rgba(0, 0, 0, 0.65);
     color: whitesmoke;
     margin-top: 70px;
     font-family: arial;
-    padding: 20px 0;
+    padding: 20px,0,0,0;
     height: auto;
 }
 
@@ -222,6 +261,7 @@ footer {
     align-items: flex-start;
     gap: 40px;
     padding: 10px;
+    backdrop-filter: blur(11px);
 }
 #c-d {
     display: flex;
