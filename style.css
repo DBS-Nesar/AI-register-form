@@ -9,22 +9,7 @@
 
 @keyframes head {
     from { transform: translateX(0px); }
-    to { transform: translateX(270px); }
-}
-
-@media screen and (min-width: 1000px) and (max-width: 1100px) {
-    @keyframes head {
-        from { transform: translateX(0px); }
-        to { transform: translateX(150px); }
-    }
-
-    #right-sided-navbar {
-        margin-left: 200px;
-    }
-
-    #main-head {
-        width: 502px;
-    }
+    to { transform: translateX(63%); }
 }
 
 @keyframes headings {
@@ -114,7 +99,7 @@ body {
     justify-content: space-evenly;
     align-items: end;
     text-align: right;
-    margin-left: 320px;
+    margin-left: 26%;
     margin-right: 0;
     width: 330px;
     font-weight: 400;
@@ -356,3 +341,4 @@ form {
     box-shadow: 0 0 25px rgba(255, 165, 0, 0.3);
     border-radius: 12px;
 }
+
