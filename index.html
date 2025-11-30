@@ -33,20 +33,23 @@
                   <label>
                 <h3 class="headings">Personal Information</h3><br><br>
                 <div>
-                    <label for ="f-n"><h4 class="headings">First Name</h4></label>
+                    <label for ="f-n"><h4 class="headings">First Name*</h4></label>
                     <input type="text" name="First-name" class = "inputs" placeholder="Enter First name" required id ="f-n"><br><br>
                 </div>
                 <div>
-                    <label for ="l-n"><h4 class="headings">Last Name</h4></label>
+                    <label for ="l-n"><h4 class="headings">Last Name*</h4></label>
                     <input type="text" placeholder="Enter your Last name" name="Last-name" id = "last-name" class ="inputs" required ><br><br>
                 </div>
                 <div>
-                    <label for ="f-n"><h4 class="headings">Mobile Number</h4></label>
+                    <label for ="m-n"><h4 class="headings">Mobile Number*</h4></label>
                     <input type="tel" inputmode="numeric" pattern="\d{10}"maxlength="10"placeholder="Enter mobile number" name="number" id = "number" class="inputs" required><br><br>
                 </div>
+                <div>
+                    <label for ="e-n"><h4 class="headings">Mobile Number*</h4></label>
                     <input type = "email" placeholder="Enter your email" name="email" id = "email" class="inputs" pattern=".*@.*" required><br><br>
+                </div>
                     </label><label>
-                    <h4 class="headings">City</h4>
+                    <h4 class="headings" required>City*</h4>
                         <select name="city" id="city" class= "inputs">
                             <option value="start">-- Select City --</option>
                             <option value="ferozepur">Ferozepur</option>
@@ -203,11 +206,11 @@
                         </select><br><br>
                         </label>
                         <label>
-                <h4 class   ="headings">D.O.B.</h4>
+                <h4 class ="headings">D.O.B.*</h4>
                     <input type="date" name="D.O.B."required class= "inputs">
                     </label>
                     <label>
-                <h4 class="headings">Gender</h4><br>
+                <h4 class="headings">Gender*</h4><br>
                     <div id = "gender-div">
                         <div id ="gender-div2">
                         <label>
@@ -217,14 +220,14 @@
                         <input required type="radio" name="gender" value="Female"class="gender"><p class="gender">Female</p><br><br>
                         </label>
                         <label>
-                            <input type = "radio" name ="gender" value ="Others"class="gender" ><p class = "gender">Others</p><br><br>
+                            <input required type = "radio" name ="gender" value ="Others"class="gender" ><p class = "gender">Others</p><br><br>
                         </label> 
                         </div>
                     </div>
                     </label>
                 <label>
-                <h4 class="headings">Qualifications</h4>
-                    <select name="qualification" id="qualification" class= "inputs">
+                <h4 class="headings">Qualifications*</h4>
+                    <select required name="qualification" id="qualification" class= "inputs">
                       <option value="">-- Select Qualification --</option>
                       <option value="10th-pass">10th Pass (Secondary School)</option>
                       <option value="12th-pass">12th Pass (Higher Secondary School)</option>
@@ -237,8 +240,8 @@
                     </select><br><br>
                 </label>
                 <label>
-                <h4 class = headings>Finding job as:</h4>
-                    <select id="job-type" name="job-type" class = "inputs">
+                <h4 class = headings >Finding job as:*</h4>
+                    <select id="job-type" name="job-type" class = "inputs" required>
                         <option value="">--Please choose an option--</option>
                         <option value="ai-engineer">AI Engineer</option>
                         <option value="machine-learning-engineer">Machine Learning Engineer</option>
@@ -258,64 +261,64 @@
                     </select><br><br><br>
                 </label>
                 <label>
-                <h4 class="headings">Experience </h4>
+                <h4 class="headings">Experience* </h4>
                     <div id="exp-div">
-                    
+                        
                         <label class="exp-option">
-                            <input type="radio" name="exp" value="0">
+                            <input type="radio" name="exp" value="0" required>
                             Less than a year.
                         </label>
                     
-                        <label class="exp-option">
+                        <label class="exp-option" required>
                             <input type="radio" name="exp" value="1-3">
                             1-3 years
                         </label>
                     
-                        <label class="exp-option">
+                        <label class="exp-option" required>
                             <input type="radio" name="exp" value="3-5">
                             3-5 years
                         </label>
                     
-                        <label class="exp-option">
+                        <label class="exp-option" required >
                             <input type="radio" name="exp" value="5-8">
                             5-8 years
                         </label>
                     
-                        <label class="exp-option">
+                        <label class="exp-option" required>
                             <input type="radio" name="exp" value="8-10">
                             8-10 years
                         </label>
-                        <label class="exp-option">
+                        <label class="exp-option"required>
                             <input type="radio" name="exp" value="10+">
                             10+ years
                         </label>
                     </div><br><br></label>
                     <label>
-                <h4 class= "headings">Expected salary(In range)</h4>
+                <h4 class= "headings">Expected salary(In range)*</h4>
                     <div id="salary-div">
                     
                         <label class="salary-option">
-                            <input type="radio" name="salary" value="0-70k">
+                            <input type="radio" name="salary" value="0-70k"required>
                             0-70 Thousand
                         </label>
                     
                         <label class="salary-option">
-                            <input type="radio" name="salary" value="1-1.5L">
+                            <input type="radio" name="salary" value="1-1.5L"required>
                             1-1.5 Lakh
                         </label>
                     
                         <label class="salary-option">
-                            <input type="radio" name="salary" value="1.5-3L">
+                            <input type="radio" name="salary" value="1.5-3L"required>
                             1.5-3 Lakh
                         </label>
                     
                         <label class="salary-option">
-                            <input type="radio" name="salary" value="3-5L">
+                            <input type="radio" name="salary" value="3-5L"required>
                             3-5 Lakh
                         </label>
                     
                         <label class="salary-option">
-                            <input type="radio" name="salary" value="5-7L">
+                            <input type="radio" name="salary" value="5-7L"required>
                             5-7 Lakh
                         </label></label>
                     
@@ -356,6 +359,7 @@
         </div>
 </body>
 </html>
+
 
 
 
