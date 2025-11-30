@@ -108,6 +108,7 @@ body{
     height: auto;
     width: 930px;
     border-radius: 15px;
+    backdrop-filter: blur(7px);
 }
 #submit-button{
     background-color:black;
@@ -242,6 +243,7 @@ form {
   box-shadow: 0 0 25px rgba(255, 165, 0, 0.3);
   border-radius: 12px;
 }
+
 
 
 
