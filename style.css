@@ -6,11 +6,11 @@
     from{transform: translateX(0px);}
     to{transform:translateX(270px);}
 }
-@media 1080px{
+@media screen and (min-width: 1000px) and (max-width: 1080px) {
     @keyframes head{
     from{transform: translateX(0px);}
     to{transform:translateX(130px);}
-}
+    }
 }
 @keyframes headings{
     from{transform: translateX(0px);}
@@ -231,6 +231,7 @@ footer {
     display: block;
     padding-left:5px;
 }
+
 
 
 
