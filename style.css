@@ -98,6 +98,7 @@ body {
     position: relative;
     right: 0;
     z-index: 10;
+    border-bottom: 1.7px solid rgba(255, 255, 255, 0.6);
 }
 
 #navbar::after {
@@ -131,10 +132,12 @@ body {
 }
 
 .links:hover {
-    background-image: linear-gradient(135deg, rgba(245, 245, 245,0.75), rgba(252, 181, 3,0.75) 70%);
     font-weight: 400;
     transition:font-weight 0.7s ease-in;
     border-radius:9px;
+    background: -webkit-linear-gradient(whitesmoke, orange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 
@@ -202,14 +205,14 @@ select option {
 }
 
 #submit-button {
-    background-color:white;
+    background-image:linear-gradient(140deg,rgb(50, 202, 253),rgb(255, 30, 30));
     font-family: sans-serif;
     font-weight: 700;
     width: 400px;
     margin-top: 30px;
     margin-bottom: 50px;
     border-radius: 15px;
-    color: black;
+    color: whitesmoke;
 }
 
 #submit-button:hover {
@@ -355,7 +358,6 @@ form {
     box-shadow: 0 0 25px rgba(255, 165, 0, 0.3);
     border-radius: 12px;
 }
-
 
 
 
