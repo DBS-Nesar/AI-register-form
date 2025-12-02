@@ -21,7 +21,7 @@
 @media screen and (min-width: 600px) and (max-width:1250px){
     @keyframes head {
     from { transform: translateX(0px); }
-    to { transform: translateX(55%); }
+    to { transform: translateX(60%); }
 }
 }
 
