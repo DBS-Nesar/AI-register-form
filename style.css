@@ -396,13 +396,13 @@ select option {
 }
 
 #submit-button,#reset-button {
-    background-color:transparent;
+    background-color:white;
     font-family: sans-serif;
     font-weight: 700;
     width: 400px;
     margin-top: 30px;
     border-radius: 9px;
-    color: whitesmoke;
+    color: black;
     border:2px solid white
 }
 #submit-button{
@@ -476,4 +476,5 @@ footer {
     transform: scale(1.10);
     transition-duration: 0.4s;
 }
+
 
