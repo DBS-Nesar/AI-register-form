@@ -43,7 +43,7 @@ body {
 /* -------------------------------------- */
 
 #main-head {
-    margin-left: 200px;
+    font-size:4vh;
     margin-top: 30px;
     font-family: 'Trebuchet MS';
     background: -webkit-linear-gradient(135deg, whitesmoke, orange 70%);
@@ -469,6 +469,7 @@ footer {
     transform: scale(1.10);
     transition-duration: 0.4s;
 }
+
 
 
 
